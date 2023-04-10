@@ -136,8 +136,13 @@ body.dark-theme {
 }
 
 .dark-theme .home__perfil img{
-  filter: invert();
+  filter: invert(1);
 }
+
+.dark-theme .skills__blob_2 img{
+  filter: invert(1);
+}
+
 .dark-theme .home__social-link{
   color: var(--title-color);
 }
@@ -429,7 +434,8 @@ body.dark-theme {
 
 .skills__info,
 .skills__data,
-.skills__blob{
+.skills__blob,
+.skills__blob_2{
   display: grid;
 }
 
@@ -458,6 +464,21 @@ body.dark-theme {
   width: 40px;
 }
 
+.skills__blob_2{
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+
+  transition: background .4s;
+}
+
+.skills__blob_2 img{
+  width: 40px;
+}
+
 .skills__name{
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
@@ -470,6 +491,10 @@ body.dark-theme {
 
 /* Animation skills */
 .skills__blob:hover img{
+  animation: bounce-skills .6s;
+}
+
+.skills__blob_2:hover img{
   animation: bounce-skills .6s;
 }
 
