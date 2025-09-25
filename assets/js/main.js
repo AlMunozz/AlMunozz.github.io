@@ -183,3 +183,45 @@ sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {origin: 'left'})
 sr.reveal(`.skills__content:nth-child(2), .contact__container:nth-child(2)`, {origin: 'right'})
 sr.reveal(`.qualification__content, .services__card`, {interval: 100})
+
+// Traducción simple: TODOS LOS ELEMENTOS CON data-en y data-es
+document.addEventListener('DOMContentLoaded', () => {
+  const langBtn = document.getElementById('lang-switch');
+  let lang = localStorage.getItem('lang') || 'es';
+
+  function setLangTexts(langKey) {
+    document.querySelectorAll('[data-en][data-es]').forEach(el => {
+      const spanText = el.querySelector('.nav__text');
+      const newText = el.getAttribute(`data-${langKey}`);
+      if (spanText) {
+        // Si el texto contiene etiquetas HTML como <br>, usa innerHTML
+        if (newText.includes('<br>')) {
+          spanText.innerHTML = newText;
+        } else {
+          spanText.textContent = newText;
+        }
+      } else {
+        if (newText.includes('<br>')) {
+          el.innerHTML = newText;
+        } else {
+          el.textContent = newText;
+        }
+      }
+    });
+  }
+  
+
+  setLangTexts(lang);
+
+  if(langBtn) {
+    langBtn.textContent = lang === 'en' ? 'ES' : 'EN'; // Inicializa al cargar
+  
+    langBtn.addEventListener('click', () => {
+      lang = (lang === 'en') ? 'es' : 'en';
+      localStorage.setItem('lang', lang);
+      langBtn.textContent = lang === 'en' ? 'ES' : 'EN'; // Cambia texto botón antes de recargar
+      location.reload(); // Fuerza recarga completa para animaciones
+    });
+  }  
+});
+

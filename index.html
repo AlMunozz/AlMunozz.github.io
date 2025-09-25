@@ -32,44 +32,46 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">                      
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-5-line"></i> Home
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-image-line"></i> Projects
+                            <a href="#home" class="nav__link active-link" data-en="Home" data-es="Inicio">
+                                <i class="ri-home-5-line"></i>
+                                <span class="nav__text">Home</span>
                             </a>
                         </li>
                         
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-trophy-line"></i> Skills
+                            <a href="#projects" class="nav__link" data-en="Projects" data-es="Proyectos">
+                                <i class="ri-image-line"></i>
+                                <span class="nav__text">Projects</span>
                             </a>
-
                         </li>
                         
                         <li class="nav__item">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-open-line"></i> Qualification
+                            <a href="#skills" class="nav__link" data-en="Skills" data-es="Habilidades">
+                                <i class="ri-trophy-line"></i>
+                                <span class="nav__text">Skills</span>
                             </a>
-
                         </li>
                         
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="ri-briefcase-line"></i> Services
+                            <a href="#qualification" class="nav__link" data-en="Qualification" data-es="Experiencia">
+                                <i class="ri-book-open-line"></i>
+                                <span class="nav__text">Qualification</span>
                             </a>
-
                         </li>
                         
-
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-chat-3-line"></i> Contact
+                            <a href="#services" class="nav__link" data-en="Services" data-es="Servicios">
+                                <i class="ri-briefcase-line"></i>
+                                <span class="nav__text">Services</span>
                             </a>
                         </li>
+                        
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link" data-en="Contact" data-es="Contacto">
+                                <i class="ri-chat-3-line"></i>
+                                <span class="nav__text">Contact</span>
+                            </a>
+                        </li>                        
                     </ul>
 
                     <!-- Close button -->
@@ -81,12 +83,15 @@
                 <div class="nav__buttons">
                     <!-- Theme change button -->
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
-
+                    <button id="lang-switch">EN</button>
                     <!--Toggle button -->
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="ri-menu-4-line"></i>
                     </div>
                 </div>
+
+              
+  
             </nav>
         </header>
 
@@ -96,121 +101,90 @@
             <section class="home section" id="home">
                 <div class="home__container container grid section__border">
                     <div class="home__data grid">
-                        <h1 class="home__title">
-                            Hi, I'm Alberto <br>
-                            Video Game Developer <br>
-                            Based in Spain <br>
+                        <h1 class="home__title"
+                            data-en="Alberto Muñoz<br>Video Game Developer"
+                            data-es="Alberto Muñoz<br>Desarrollador de Videojuegos">
                         </h1>
 
                         <div class="home__blob grid">
                             <div class="home__perfil">
                                 <img src="assets/img/Logo2.png" alt="home perfil">
                             </div>
-
-                            <!-- <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle"> -->
                         </div>
 
                         <ul class="home__social">
                             <a href="https://drive.google.com/file/d/1_PYtzejTUMI5E9msiVtMCg7-E_-85yp5/view?usp=sharing" target="_blank" class="home__social-link">
-                                <!-- <i class="ri-dribbble-line"></i> -->
-                                <!-- <i class="fa-sharp fa-solid fa-id-card"></i> -->
                                 <i class="fa-solid fa-file fa-sm"></i>
                             </a>
-
                             <a href="https://www.linkedin.com/in/almunozz/" target="_blank" class="home__social-link">
-                                <!-- <i class="ri-linkedin-box-line"></i> -->
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-
                             <a href="https://itch.io/profile/almunozz" target="_blank" class="home__social-link">
-                                <!-- <i class="ri-github-line"></i> -->
                                 <i class="fa-brands fa-itch-io"></i>
                             </a>
-
                         </ul>
                     </div>
 
                     <!--==================== HOME INFO 1 ====================-->
                     <div class="home__info">
                         <div>
-                            <h3 class="home__info-title">
-                                BIOGRAPHY
-                            </h3>
-
-                            <p class="home__info-description">
-                                Game developer with great design and programming skills.
-                                Good at teamworking, proactive, intelligent and committed. Amateur chess player.
-                                I was awarded with honors in the end-of-degree thesis.
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="BIOGRAPHY"
+                                data-es="BIOGRAFÍA"></h3>
+                            <p class="home__info-description"
+                                data-en="Video game developer with 3 years of professional experience in programming, design, and production pipelines. Experience working in multidisciplinary teams, contributing creativity, leadership, and demonstrable results in real projects. Advanced level of English. Graduated with honors."
+                                data-es="Desarrollador de videojuegos con 3 años de experiencia profesional en programación, diseño y pipelines de producción. Experiencia en equipos multidisciplinares, aportando creatividad, liderazgo y resultados demostrables en proyectos reales. Nivel avanzado de inglés. Graduado con matrícula de honor."></p>
                         </div>
-
                         <div>
-                            <h3 class="home__info-title">
-                                CONTACT
-                            </h3>
-
-                            <p class="home__info-description">
-                                Madrid, España <br>
-                                alberto.munozlamela@gmail.com <br>
-                                +34 638605576 <br>
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="CONTACT"
+                                data-es="CONTACTO"></h3>
+                            <p class="home__info-description2"
+                                data-en="Madrid, Spain<br>alberto.munozlamela@gmail.com<br>+34 638605576"
+                                data-es="Madrid, España<br>alberto.munozlamela@gmail.com<br>+34 638605576"></p>
                         </div>
-
                         <div>
-                            <h3 class="home__info-title">
-                                SKILLS
-                            </h3>
-
-                            <p class="home__info-description">
-                                Game & Narrative Design <br>
-                                Programming <br>
-                                Production <br>
-                                QA <br>
-                                Investigation <br>
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="SKILLS"
+                                data-es="HABILIDADES"></h3>
+                            <p class="home__info-description3"
+                                data-en="Programming<br>Game Design<br>Production<br>QA<br>Investigation"
+                                data-es="Programación<br>Diseño de juego<br>Producción<br>Control de calidad<br>Investigación"></p>
                         </div>
                     </div>
-
-                    <!--==================== HOME INFO 2 ====================-->
+                    
                     <div class="home__info">
                         <div>
-                            <h3 class="home__info-title">
-                                YEARS OF EXPERIENCE
-                            </h3>
-
-                            <p class="home__info-number">
-                                03+
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="YEARS OF EXPERIENCE"
+                                data-es="AÑOS DE EXPERIENCIA"></h3>
+                            <p class="home__info-number">03+</p>
                         </div>
-
                         <div>
-                            <h3 class="home__info-title">
-                                COMPLETED PROJECTS
-                            </h3>
-
-                            <p class="home__info-number">
-                                15+
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="COMPLETED PROJECTS"
+                                data-es="PROYECTOS COMPLETADOS"></h3>
+                            <p class="home__info-number">15+</p>
                         </div>
-
                         <div>
-                            <h3 class="home__info-title">
-                                COMPANIES WORKED
-                            </h3>
-
-                            <p class="home__info-number">
-                                04
-                            </p>
+                            <h3 class="home__info-title"
+                                data-en="COMPANIES WORKED"
+                                data-es="EMPRESAS EN LAS QUE HE TRABAJADO"></h3>
+                            <p class="home__info-number">04</p>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </section>
 
+
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Some of my video games</span>
+                <h2 class="section__title"
+            data-en="Projects"
+            data-es="Proyectos"></h2>
+        <span class="section__subtitle"
+            data-en="Some of my video games"
+            data-es="Algunos de mis videojuegos"></span>
 
                 <div class="container section__border">
                     <div class="projects__container swiper">
@@ -218,105 +192,105 @@
                             <!--==================== PROJECT 1 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/GlitchSurvivorsSplashArt.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">The project I made at Electronic Arts internship</span>
-                                    <h1 class="projects__title">Glitch Survivors</h1>
-
-                                    <a href="https://www.youtube.com/watch?v=g3UW6a8IxPU" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="The project I made at Electronic Arts internship"
+                                    data-es="Proyecto desarrollado durante las prácticas en EA"></span>
+                                <h1 class="projects__title">Glitch Survivors</h1>
+                                  <a href="https://www.youtube.com/watch?v=g3UW6a8IxPU" target="_blank" class="projects__button" 
+                                    data-en="More info" 
+                                    data-es="Más información"></a>                            
                                 </div>
-                            </div>
+                              </div>
 
                             <!--==================== PROJECT 2 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/logo_caminos.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">
-                                        Discover Spanish legends from the hand of their heros.
-                                    </span>
-                                    <h1 class="projects__title">Caminos Legendarios</h1>
-
-                                    <a href="https://play.google.com/store/apps/details?id=com.NextLevelStudios.CaminosLegendarios&hl=es_419" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="Spanish legends from the hand of their heroes."
+                                    data-es="Las leyendas españolas de la mano de sus héroes."></span>
+                                  <h1 class="projects__title">Caminos Legendarios</h1>
+                                  <a href="https://play.google.com/store/apps/details?id=com.NextLevelStudios.CaminosLegendarios&hl=es_419" 
+                                     target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
-                            </div>
+                              </div>
 
                             <!--==================== PROJECT 3 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/TFG.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">It was awarded with honors.</span>
-                                    <h1 class="projects__title">My End-Of-Degree Thesis</h1>
-
-                                    <a href="http://ddfv.ufv.es/handle/10641/3505" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="It was awarded with honors."
+                                    data-es="Fue galardonado con matrícula de honor."></span>
+                                  <h1 class="projects__title"
+                                    data-en="My End-Of-Degree Thesis"
+                                    data-es="Trabajo Fin de Grado"></h1>
+                                  <a href="http://ddfv.ufv.es/handle/10641/3505" target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
-                            </div>
+                              </div>
                             
                             <!--==================== PROJECT 4 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/Soul Seeker.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">
-                                        Soul Seeker is a game made for the GGJ 2022.
-                                    </span>
-                                    <h1 class="projects__title">Soul Seeker</h1>
-
-                                    <a href="https://globalgamejam.org/2022/games/soul-seeker-5" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="Soul Seeker is a game made for the GGJ 2022."
+                                    data-es="Soul Seeker es un juego creado para la GGJ 2022."></span>
+                                  <h1 class="projects__title">Soul Seeker</h1>
+                                  <a href="https://globalgamejam.org/2022/games/soul-seeker-5" target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
-                            </div>
+                              </div>
 
                             <!--==================== PROJECT 5 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/Pizzacoin.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">Newsgame published in "20 Minutos" newspaper</span>
-                                    <h1 class="projects__title">PizzaCoin</h1>
-
-                                    <a href="https://almunozz.itch.io/pizzacoin" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en='Newsgame published in "20 Minutos" newspaper'
+                                    data-es='Newsgame publicado en el periódico "20 Minutos"'></span>
+                                  <h1 class="projects__title">Pizzacoin</h1>
+                                  <a href="https://almunozz.itch.io/pizzacoin" target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
-                            </div>
-
+                              </div>
 
                             <!--==================== PROJECT 6 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/RecyclingFactory.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">4th place at Francisco de Vitoria undertaking contest</span>
-                                    <h1 class="projects__title">Recycling Factory</h1>
-
-                                    <a href="https://youtu.be/twyPHNXjKhs" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="4th place at Francisco de Vitoria undertaking contest"
+                                    data-es="4º en el concurso de emprendimiento de la UFV"></span>
+                                  <h1 class="projects__title">Recycling Factory</h1>
+                                  <a href="https://youtu.be/twyPHNXjKhs" target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
                             </div>
 
                             <!--==================== PROJECT 7 ====================-->
                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/Edits.png" alt="projects image" class="projects__img">
-
                                 <div>
-                                    <span class="projects__subtitle">I enjoy editing videos too</span>
-                                    <h1 class="projects__title">One of my edits</h1>
-
-                                    <a href="https://www.youtube.com/watch?v=uauB9A7M5lo" target="_blank" class="projects__button">
-                                        More info   <i class="ri-arrow-right-line"></i>
-                                    </a>
+                                  <span class="projects__subtitle"
+                                    data-en="I enjoy editing videos too"
+                                    data-es="Me gusta también editar vídeos"></span>
+                                  <h1 class="projects__title"
+                                    data-en="My edits"
+                                    data-es="Mis montajes"></h1>
+                                  <a href="https://www.youtube.com/watch?v=uauB9A7M5lo" target="_blank" class="projects__button"
+                                    data-en="More info"
+                                    data-es="Más información"></a>
                                 </div>
-                            </div>
+                              </div>
                         </div>
 
                             <!--Swiper arrows -->
@@ -353,7 +327,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Unity Engine</h3>
-                                <span class="skills__subtitle">Expert</span>
+                                <span class="skills__subtitle"
+                                    data-en="Expert"
+                                    data-es="Experto"></span>
                             </div>
 
                             <div class="skills__data">
@@ -362,7 +338,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Unreal Engine</h3>
-                                <span class="skills__subtitle">Intermediate</span>
+                                <span class="skills__subtitle"
+                                    data-en="Intermediate"
+                                    data-es="Intermedio"></span>
                             </div>
 
                             <div class="skills__data">
@@ -371,7 +349,9 @@
                                 </div>
 
                                 <h3 class="skills__name">C#</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
 
                             <div class="skills__data">
@@ -380,7 +360,9 @@
                                 </div>
 
                                 <h3 class="skills__name">C++</h3>
-                                <span class="skills__subtitle">Intermediate</span>
+                                <span class="skills__subtitle"
+                                    data-en="Intermediate"
+                                    data-es="Intermedio"></span>
                             </div>
 
                             <div class="skills__data">
@@ -389,7 +371,9 @@
                                 </div>
 
                                 <h3 class="skills__name">HTML</h3>
-                                <span class="skills__subtitle">Intermediate</span>
+                                <span class="skills__subtitle"
+                                    data-en="Intermediate"
+                                    data-es="Intermedio"></span>
                             </div>
 
                             <div class="skills__data">
@@ -398,7 +382,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Git</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
                         </div>
                     </div>
@@ -415,7 +401,9 @@
                                 </div>
 
                                 <h3 class="skills__name">3DS Max</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
 
                             <div class="skills__data">
@@ -424,7 +412,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Photoshop</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
 
                             <div class="skills__data">
@@ -433,7 +423,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Substance</h3>
-                                <span class="skills__subtitle">Intermediate</span>
+                                <span class="skills__subtitle"
+                                    data-en="Intermediate"
+                                    data-es="Intermedio"></span>
                             </div>
 
                             <div class="skills__data">
@@ -442,7 +434,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Blender</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
 
                             <div class="skills__data">
@@ -451,7 +445,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Excel</h3>
-                                <span class="skills__subtitle">Intermediate</span>
+                                <span class="skills__subtitle"
+                                    data-en="Intermediate"
+                                    data-es="Intermedio"></span>
                             </div>
 
                             <div class="skills__data">
@@ -460,7 +456,9 @@
                                 </div>
 
                                 <h3 class="skills__name">Premiere</h3>
-                                <span class="skills__subtitle">High</span>
+                                <span class="skills__subtitle"
+                                    data-en="High"
+                                    data-es="Alto"></span>
                             </div>
                         </div>
                     </div>
@@ -469,148 +467,148 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section" id="qualification">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">Experience & education</span>
-
+                <h2 class="section__title"
+                    data-en="Qualification"
+                    data-es="Formación"></h2>
+                <span class="section__subtitle"
+                    data-en="Experience & education"
+                    data-es="Experiencia y estudios"></span>
+              
                 <div class="qualification__container container grid section__border">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Work
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Game Designer and Programmer
-                                </h3>
-                                <span class="qualification__country">Electronic Arts Internship, Madrid</span>
-                                <span class="qualification__year">Oct 2022 - Feb 2023</span>
-                                
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Game Developer
-                                </h3>
-                                <span class="qualification__country">El Último Signo, Madrid</span>
-                                <span class="qualification__year">Since Feb 2021</span>
-                                
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    QA - Alpha Tester
-                                </h3>
-                                <span class="qualification__country">Blackmouth Games, Madrid</span>
-                                <span class="qualification__year">October 2020</span>
-                                
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    QA - Beta Tester
-                                </h3>
-                                <span class="qualification__country">Pendulo Studios, Madrid</span>
-                                <span class="qualification__year">Jan 2022 & Nov 2022</span>
-                                
-                            </div>
-                        </div>
+                  <!-- QUALIFICATION 1 -->
+                  <div class="qualification__content">
+                    <h3 class="qualification__title">
+                      <i class="ri-building-line"></i>
+                      <span data-en="Work" data-es="Trabajo"></span>
+                    </h3>
+                    <div class="qualification__info">
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="Unreal 5 Game Designer and Programmer"
+                            data-es="Diseñador y programador de videojuegos en Unreal 5"></h3>
+                        <span class="qualification__country"
+                              data-en="Electronic Arts Internship, Madrid"
+                              data-es="Prácticas en Electronic Arts, Madrid"></span>
+                        <span class="qualification__year"
+                              data-en="Oct 2022 - Feb 2023"
+                              data-es="Oct 2022 - Feb 2023"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="Unity Programmer"
+                            data-es="Programador en Unity"></h3>
+                        <span class="qualification__country">El Último Signo, Madrid</span>
+                        <span class="qualification__year"
+                              data-en="Since Feb 2021"
+                              data-es="Desde Feb 2021"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="QA - Alpha Tester"
+                            data-es="QA - Tester Alpha"></h3>
+                        <span class="qualification__country">Blackmouth Games, Madrid</span>
+                        <span class="qualification__year"
+                              data-en="October 2020"
+                              data-es="Octubre 2020"></span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="QA - Beta Tester"
+                            data-es="QA - Tester Beta"></h3>
+                        <span class="qualification__country">Pendulo Studios, Madrid</span>
+                        <span class="qualification__year"
+                              data-en="Jan 2022 & Nov 2022"
+                              data-es="Ene 2022 y Nov 2022"></span>
+                      </div>
                     </div>
-                    
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-pencil-ruler-2-line"></i> Education
-                        </h3>
-
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Game Developer Degree
-                                </h3>
-                                <span class="qualification__country">Francisco de Vitoria University</span>
-                                <span class="qualification__year">2019 - 2023</span>
-
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Expert Technical Artist Title
-                                </h3>
-                                <span class="qualification__country">Francisco de Vitoria University</span>
-                                <span class="qualification__year">2019 - 2023</span>
-
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__name">
-                                    Bachillerato Title, Science
-                                </h3>
-                                <span class="qualification__country">Colegio Madres Concepcionistas</span>
-                                <span class="qualification__year">2004 - 2019</span>
-
-                            </div>
-                        </div>
+                  </div>
+                  <!-- QUALIFICATION 2 -->
+                  <div class="qualification__content">
+                    <h3 class="qualification__title">
+                      <i class="ri-pencil-ruler-2-line"></i>
+                      <span data-en="Education" data-es="Educación"></span>
+                    </h3>
+                    <div class="qualification__info">
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="Game Developer Degree"
+                            data-es="Grado en Desarrollo de Videojuegos"></h3>
+                        <span class="qualification__country"
+                              data-en="Francisco de Vitoria University"
+                              data-es="Universidad Francisco de Vitoria"></span>
+                        <span class="qualification__year">2019 - 2023</span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="Expert Technical Artist Title"
+                            data-es="Título Experto en Artista Técnico"></h3>
+                        <span class="qualification__country"
+                              data-en="Francisco de Vitoria University"
+                              data-es="Universidad Francisco de Vitoria"></span>
+                        <span class="qualification__year">2019 - 2023</span>
+                      </div>
+                      <div>
+                        <h3 class="qualification__name"
+                            data-en="Bachillerato Title, Science"
+                            data-es="Bachillerato, Ciencias"></h3>
+                        <span class="qualification__country">Colegio Madres Concepcionistas</span>
+                        <span class="qualification__year">2004 - 2019</span>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
                 <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
+              </section>              
 
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What do I offer</span>
-
+                <h2 class="section__title"
+                    data-en="Services"
+                    data-es="Servicios"></h2>
+                <span class="section__subtitle"
+                    data-en="What do I offer"
+                    data-es="¿Qué ofrezco?"></span>
+              
                 <div class="services__container container grid section__border">
-                    <div class="services__card">
-                        <i class="ri-layout-4-line"></i>
-
-                        <h2 class="services__title">
-                            Level & Game <br>
-                            Designer
-                        </h2>
-
-                        <p class="services__description">
-                            I always try to design fun and innovative levels.
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                    <div class="services__card">
-                        <i class="ri-code-line"></i>
-
-                        <h2 class="services__title">
-                            Programmer
-                        </h2>
-
-                        <p class="services__description">
-                            <br> I program in languages such as: C#, C++, HTML & CSS.
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
-
-                    <div class="services__card">
-                        <i class="ri-quill-pen-line"></i>
-
-                        <h2 class="services__title">
-                            Technical <br>
-                            Artist
-                        </h2>
-
-                        <p class="services__description">
-                            I can model and animate in 3D
-                            using 3DSMAX or similar.
-                        </p>
-
-                        <div class="services__border"></div>
-                    </div>
+                  <!-- PROGRAMMER -->
+                  <div class="services__card">
+                    <i class="ri-code-line"></i>
+                    <h2 class="services__title"
+                        data-en="Programmer"
+                        data-es="Programador"></h2>
+                    <p class="services__description"
+                       data-en="I program in languages such as: C#, C++, Python, HTML & CSS."
+                       data-es="Programo en lenguajes como: C#, C++, Python, HTML y CSS."></p>
+                    <div class="services__border"></div>
+                  </div>
+              
+                  <!-- LEVEL & GAME DESIGNER -->
+                  <div class="services__card">
+                    <i class="ri-layout-4-line"></i>
+                    <h2 class="services__title"
+                        data-en="Level & Game Designer"
+                        data-es="Diseñador de niveles y juegos"></h2>
+                    <p class="services__description"
+                       data-en="I specialize in designing engaging and innovative levels that enhance the gameplay experience."
+                       data-es="Me especializo en el diseño de niveles atractivos e innovadores que potencian la experiencia de juego."></p>
+                    <div class="services__border"></div>
+                  </div>
+              
+                  <!-- TECHNICAL ARTIST -->
+                  <div class="services__card">
+                    <i class="ri-quill-pen-line"></i>
+                    <h2 class="services__title"
+                        data-en="Technical Artist"
+                        data-es="Artista Técnico"></h2>
+                    <p class="services__description"
+                       data-en="I can model and animate in 3D using 3DSMAX or similar."
+                       data-es="Puedo modelar y animar en 3D usando 3DSMAX o similares."></p>
+                    <div class="services__border"></div>
+                  </div>
                 </div>
-            </section>
+              </section>
+              
 
             <!--==================== TESTIMONIAL ====================
             <section class="testimonial section">
@@ -673,45 +671,54 @@
 
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
+                <h2 class="section__title"
+                    data-en="Contact Me"
+                    data-es="Contacto"></h2>
+                <span class="section__subtitle"
+                    data-en="Get in touch with me"
+                    data-es="Ponte en contacto conmigo"></span>
+              
                 <div class="contact__container container grid section__border">
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-chat-3-line"></i> Talk to me
-                        </h3>
-
-                        <div class="contact__info">
-                            <div class="contact__data">
-                                <span class="contact__data-title">Email</span>
-                                <span class="contact__data-info">alberto.munozlamela@gmail.com</span>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Whatsapp</span>
-                                <span class="contact__data-info">+34 638605576</span>
-
-                                <a href="https://wa.me/34638605576" target="_blank" class="contact__button">
-                                    Write me    <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-
-                            <div class="contact__data">
-                                <span class="contact__data-title">Linkedin</span>
-                                <span class="contact__data-info">Alberto Muñoz Lamela</span>
-
-                                <a href="https://www.linkedin.com/in/almunozz/" target="_blank" class="contact__button">
-                                    Write me    <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-                        </div>
+                  <div class="contact__content">
+                    <h3 class="contact__title">
+                      <i class="ri-chat-3-line"></i>
+                      <span data-en="Talk to me" data-es="Hablemos"></span>
+                    </h3>
+                    <div class="contact__info">
+                      <div class="contact__data">
+                        <span class="contact__data-title"
+                              data-en="Email"
+                              data-es="Correo electrónico"></span>
+                        <span class="contact__data-info">alberto.munozlamela@gmail.com</span>
+                      </div>
+                      <div class="contact__data">
+                        <span class="contact__data-title"
+                              data-en="Whatsapp"
+                              data-es="Whatsapp"></span>
+                        <span class="contact__data-info">+34 638605576</span>
+                        <a href="https://wa.me/34638605576" target="_blank" class="contact__button">
+                          <span data-en="Write me" data-es="Escríbeme"></span>
+                          <i class="ri-arrow-right-line"></i>
+                        </a>
+                      </div>
+                      <div class="contact__data">
+                        <span class="contact__data-title"
+                              data-en="Linkedin"
+                              data-es="Linkedin"></span>
+                        <span class="contact__data-info">Alberto Muñoz Lamela</span>
+                        <a href="https://www.linkedin.com/in/almunozz/" target="_blank" class="contact__button">
+                          <span data-en="Write me" data-es="Escríbeme"></span>
+                          <i class="ri-arrow-right-line"></i>
+                        </a>
+                      </div>
                     </div>
+                  </div>
 
                     <div class="contact__container">
                         <h3 class="contact__title">
-                            <i class="ri-send-plane-line"></i> Tell me about your project
-                        </h3>
+                            <i class="ri-send-plane-line"></i>
+                            <span data-en="Tell me about your project" data-es="Cuéntame tu proyecto"></span>
+                          </h3>
 
                         <form action="" class="contact__form" id="contact-form">
                             <div class="contact__form-div">
@@ -732,8 +739,9 @@
                             <p class="contact__message" id="contact-message"></p>
 
                             <button type="submit" class="contact__button">
-                                Submit  <i class="ri-arrow-right-up-line"></i>
-                            </button>
+                                <span data-en="Submit" data-es="Enviar"></span>
+                                <i class="ri-arrow-right-up-line"></i>
+                              </button>
                         </form>
                     </div>
                 </div>
@@ -743,46 +751,42 @@
         <!--==================== FOOTER ====================-->
         <footer class="footer">
             <div class="footer__container container">
-                <h1 class="footer__title">Alberto</h1>
-                <p>Video Game Developer</p>
-
-                <ul class="footer_list">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__social">
-                    <a href="https://drive.google.com/file/d/1_PYtzejTUMI5E9msiVtMCg7-E_-85yp5/view?usp=sharing" target="_blank" class="home__social-link">
-                        <!-- <i class="ri-dribbble-line"></i> -->
-                        <!-- <i class="fa-sharp fa-solid fa-id-card"></i> -->
-                        <i class="fa-solid fa-file fa-sm"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/almunozz/" target="_blank" class="home__social-link">
-                        <!-- <i class="ri-linkedin-box-line"></i> -->
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://itch.io/profile/almunozz" target="_blank" class="home__social-link">
-                        <!-- <i class="ri-github-line"></i> -->
-                        <i class="fa-brands fa-itch-io"></i>
-                    </a>
-                </ul>
-
-                <span class="footer__copy">
-                    &#169; Copyright Almunozzz. All rights reserved
-                </span>
+              <h1 class="footer__title">Alberto</h1>
+              <p data-en="Video Game Developer"
+                 data-es="Desarrollador de Videojuegos"></p>
+              <ul class="footer_list">
+                <li>
+                  <a href="#home" class="footer__link"
+                     data-en="Home"
+                     data-es="Inicio"></a>
+                </li>
+                <li>
+                  <a href="#skills" class="footer__link"
+                     data-en="Skills"
+                     data-es="Habilidades"></a>
+                </li>
+                <li>
+                  <a href="#projects" class="footer__link"
+                     data-en="Projects"
+                     data-es="Proyectos"></a>
+                </li>
+              </ul>
+              <ul class="footer__social">
+                <a href="https://drive.google.com/file/d/1_PYtzejTUMI5E9msiVtMCg7-E_-85yp5/view?usp=sharing" target="_blank" class="home__social-link">
+                  <i class="fa-solid fa-file fa-sm"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/almunozz/" target="_blank" class="home__social-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://itch.io/profile/almunozz" target="_blank" class="home__social-link">
+                  <i class="fa-brands fa-itch-io"></i>
+                </a>
+              </ul>
+              <span class="footer__copy"
+                    data-en="&#169; Copyright Almunozzz. All rights reserved"
+                    data-es="&#169; Copyright Almunozzz. Todos los derechos reservados"></span>
             </div>
-        </footer>
+          </footer>
 
 
         <!--========== SCROLL UP ==========-->
