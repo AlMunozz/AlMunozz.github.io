@@ -185,43 +185,40 @@ sr.reveal(`.skills__content:nth-child(2), .contact__container:nth-child(2)`, {or
 sr.reveal(`.qualification__content, .services__card`, {interval: 100})
 
 // Traducción simple: TODOS LOS ELEMENTOS CON data-en y data-es
+/*=============== CAMBIO DE IDIOMA ===============*/
 document.addEventListener('DOMContentLoaded', () => {
   const langBtn = document.getElementById('lang-switch');
-  let lang = localStorage.getItem('lang') || 'es';
+  const lang = localStorage.getItem('lang') || 'es';
 
   function setLangTexts(langKey) {
+    document.documentElement.lang = langKey;
+
     document.querySelectorAll('[data-en][data-es]').forEach(el => {
-      const spanText = el.querySelector('.nav__text');
       const newText = el.getAttribute(`data-${langKey}`);
-      if (spanText) {
-        // Si el texto contiene etiquetas HTML como <br>, usa innerHTML
-        if (newText.includes('<br>')) {
-          spanText.innerHTML = newText;
-        } else {
-          spanText.textContent = newText;
-        }
+      const navText = el.querySelector('.nav__text');
+
+      if (navText) {
+        navText.innerHTML = newText;
       } else {
-        if (newText.includes('<br>')) {
-          el.innerHTML = newText;
-        } else {
-          el.textContent = newText;
-        }
+        el.innerHTML = newText;
       }
     });
+
+    document.querySelectorAll('[data-en-href][data-es-href]').forEach(link => {
+      link.href = link.getAttribute(`data-${langKey}-href`);
+    });
   }
-  
 
   setLangTexts(lang);
 
-  if(langBtn) {
-    langBtn.textContent = lang === 'en' ? 'ES' : 'EN'; // Inicializa al cargar
-  
-    langBtn.addEventListener('click', () => {
-      lang = (lang === 'en') ? 'es' : 'en';
-      localStorage.setItem('lang', lang);
-      langBtn.textContent = lang === 'en' ? 'ES' : 'EN'; // Cambia texto botón antes de recargar
-      location.reload(); // Fuerza recarga completa para animaciones
-    });
-  }  
-});
+  if (langBtn) {
+    langBtn.textContent = lang === 'en' ? 'ES' : 'EN';
 
+    langBtn.addEventListener('click', () => {
+      const newLang = lang === 'en' ? 'es' : 'en';
+
+      localStorage.setItem('lang', newLang);
+      location.reload();
+    });
+  }
+});
